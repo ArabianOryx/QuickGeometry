@@ -1,8 +1,6 @@
 package com.vxsoftware.quickgeometry.ui.circle
 
 import android.annotation.SuppressLint
-import android.icu.math.BigDecimal
-import android.icu.util.UniversalTimeScale.toBigDecimal
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -59,7 +57,7 @@ class CircleFragment : Fragment() {
             // your code to perform when the user clicks on the button
             //Toast.makeText (this@CircleFragment, "You clicked me.", Toast.LENGTH_SHORT).show()
 
-            editText = root.findViewById(R.id.RadiusDecimal)
+            editText = root.findViewById(R.id.RadiusCDecimal)
             if ((editText.text.toString().length > 0)) {
                 r = editText.text.toString().toDouble()
                 d = 2 * r
@@ -71,7 +69,7 @@ class CircleFragment : Fragment() {
                         "Area is $A square unit of measurement"
 
             } else {
-                editText = root.findViewById(R.id.DiameterDecimal)
+                editText = root.findViewById(R.id.DiameterCDecimal)
 
                 if ((editText.text.toString().length > 0)) {
                     d = editText.text.toString().toDouble()
@@ -95,7 +93,7 @@ class CircleFragment : Fragment() {
                                 "Radius is $r \n" + "Diameter is $d \n" +
                                 "Area is $A square unit of measurement"
                     } else {
-                        editText = root.findViewById(R.id.AreaDecimal)
+                        editText = root.findViewById(R.id.AreaCDecimal)
 
                         if ((editText.text.toString().length > 0)) {
                             A = editText.text.toString().toDouble()

@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_circle"
         android:name="com.vxsoftware.quickgeometry.ui.circle.CircleFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_circle" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.vxsoftware.quickgeometry.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_square"
+        android:name="com.vxsoftware.quickgeometry.ui.square.SquareFragment"
+        android:label="@string/menu_square"
+        tools:layout="@layout/fragment_square" />
 </navigation>
