@@ -14,7 +14,7 @@
     <fragment
         android:id="@+id/nav_circle"
         android:name="com.vxsoftware.quickgeometry.ui.circle.CircleFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_circle"
         tools:layout="@layout/fragment_circle" />
 
     <fragment
@@ -22,4 +22,16 @@
         android:name="com.vxsoftware.quickgeometry.ui.square.SquareFragment"
         android:label="@string/menu_square"
         tools:layout="@layout/fragment_square" />
+
+    <fragment
+        android:id="@+id/nav_rectangular"
+        android:name="com.vxsoftware.quickgeometry.ui.rectangular.RectangleFragment"
+        android:label="@string/menu_rectangular"
+        tools:layout="@layout/fragment_rectangle" />
+
+    <fragment
+        android:id="@+id/nav_triangle"
+        android:name="com.vxsoftware.quickgeometry.ui.triangle.TriangleFragment"
+        android:label="@string/menu_triangle"
+        tools:layout="@layout/fragment_triangle" />
 </navigation>

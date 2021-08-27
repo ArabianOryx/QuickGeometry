@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.square.SquareFragment">
+    tools:context=".ui.triangle.TriangleFragment">
 
     <TextView
-        android:id="@+id/text_square"
+        android:id="@+id/text_triangle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <EditText
-        android:id="@+id/SideSDecimal"
+        android:id="@+id/HeightTDecimal"
         android:layout_width="120dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -35,10 +35,10 @@
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119" />
+        app:layout_constraintVertical_bias="0.122" />
 
     <EditText
-        android:id="@+id/PerimeterSDecimal"
+        android:id="@+id/SidebTDecimal"
         android:layout_width="120dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -50,10 +50,10 @@
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.189" />
 
     <EditText
-        android:id="@+id/AreaSDecimal"
+        android:id="@+id/AreaTDecimal"
         android:layout_width="120dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -65,45 +65,13 @@
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.319" />
-
-    <EditText
-        android:id="@+id/DiagonalSDecimal"
-        android:layout_width="120dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:scaleX="1.2"
-        android:scaleY="1.2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188" />
+        app:layout_constraintVertical_bias="0.255" />
 
     <TextView
-        android:id="@+id/StextView4"
+        android:id="@+id/TtextView6"
         android:layout_width="120dp"
         android:layout_height="45dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="37dp"
-        android:gravity="bottom|left"
-        android:text="Perimeter (P)"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/RadiusCDecimal"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.211" />
-
-    <TextView
-        android:id="@+id/StextView6"
-        android:layout_width="120dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="37dp"
         android:gravity="bottom|left"
         android:text="Area (A)"
@@ -114,16 +82,32 @@
         app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintVertical_bias="0.212" />
 
     <TextView
-        android:id="@+id/StextView2"
+        android:id="@+id/TtextView2"
         android:layout_width="120dp"
         android:layout_height="45dp"
-        android:layout_marginStart="52dp"
         android:layout_marginTop="37dp"
         android:gravity="bottom|left"
-        android:text="Side (a)"
+        android:text="Height (h)"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:id="@+id/ttextView"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="37dp"
+        android:gravity="bottom|left"
+        android:text="Base (b)"
         android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -131,27 +115,10 @@
         app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069" />
-
-    <TextView
-        android:id="@+id/StextView3"
-        android:layout_width="120dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="37dp"
-        android:gravity="bottom|left"
-        android:text="Diagonal (d)"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/RadiusCDecimal"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.138" />
+        app:layout_constraintVertical_bias="0.143" />
 
     <Button
-        android:id="@+id/calcSbutton"
+        android:id="@+id/calcTbutton"
         android:layout_width="138dp"
         android:layout_height="47dp"
         android:layout_marginTop="27dp"
@@ -159,15 +126,15 @@
         android:text="Calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintHorizontal_bias="0.82"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.417" />
+        app:layout_constraintVertical_bias="0.342" />
 
     <TextView
-        android:id="@+id/ResultSView"
-        android:layout_width="367dp"
-        android:layout_height="345dp"
+        android:id="@+id/ResultTView"
+        android:layout_width="363dp"
+        android:layout_height="343dp"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
